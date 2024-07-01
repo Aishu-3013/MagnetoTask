@@ -1,0 +1,206 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-06-30T11:37:50.757Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15174800100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.intialization()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Create an account and sign in",
+        "description": "",
+        "id": "account-creation-and-sign-in-on-magento;create-an-account-and-sign-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 528427000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.stepdefinition.Hooks.exit()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2467800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the Magento homepage",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_is_on_the_magento_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6671820600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigate to the \"Create an Account\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create an Account\"",
+                  "offset": 21
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.user_navigate_to_the_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2967366400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user fill in the account creation form with the following details:",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_fill_in_the_account_creation_form_with_the_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "email",
+                  "password",
+                  "confirmpassword"
+                ]
+              },
+              {
+                "cells": [
+                  "Aishu",
+                  "Kanthasamy",
+                  "Aishu.",
+                  "password@123",
+                  "password@123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6941714400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on the \"Create an Account\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Create an Account\"",
+                  "offset": 18
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.user_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75441200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see a confirmation message that my account has been created",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_should_see_a_confirmation_message_that_my_account_has_been_created()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8410048000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user navigate to the Sign In page",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_navigate_to_the_sign_in_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4946498500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user fill in the login form with the following details:",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_fill_in_the_login_form_with_the_following_details(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "Aishu.",
+                  "password@123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30052813400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click on the \"Sign In\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign In\"",
+                  "offset": 18
+                }
+              ],
+              "location": "org.stepdefinition.StepDefinition.user_click_on_the_button(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24923300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user should be signed in successfully",
+            "match": {
+              "location": "org.stepdefinition.StepDefinition.user_should_be_signed_in_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Account creation and sign-in on Magento",
+    "description": "",
+    "id": "account-creation-and-sign-in-on-magento",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/magneto.feature",
+    "tags": []
+  }
+]
